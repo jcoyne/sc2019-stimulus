@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Work.destroy_all
+
+works = Work.create([
+  { name: 'Walden', creator: 'Threau, Henry David' },
+  { name: 'Anna Karenina' },
+  { name: 'Post Card' },
+])
+
+
+AttachedFile.create([
+  { filename: 'page1.png', size: 1234, work: works[0] }
+])

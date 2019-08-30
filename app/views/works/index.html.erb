@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Works</h1>
+
+<ul>
+  <% @works.each do |work| %>
+    <li class="work">
+      <div>
+      <%= work.name %> &mdash;
+      <%= work.creator %>
+      </div>
+
+      <div class="properties">
+        Files: <button>Hide</button>
+        <ul class="files">
+          <% work.attached_files.each do |file| %>
+            <li class="file">
+              <%= file.filename %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </li>
+  <% end %>
+</ul>
+
+<br>
+
+<%= link_to 'New Work', new_work_path %>
