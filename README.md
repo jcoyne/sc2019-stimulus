@@ -1,24 +1,20 @@
-# README
+# Samvera Connect 2019 Stimulus and Webpacker Workshop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+_This workshop largely based on the work of Noel Rappin, who taught a similar
+workshop at RailsConf 2019_
 
-Things you may want to cover:
+In order to run this application, you need SQLite on your
+machine. The application comes with a pre-seeded SQLite database.
 
-* Ruby version
+This application does not specify a Ruby version, for ease of install.
+It was developed with Ruby 2.6.4, but should run with any
+version of Ruby 2.5 and up (which is the prerequisite for Rails 6.0).
 
-* System dependencies
+In order to get set up, you should do the following
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone and download this repository
+2. In the directory for this repo, make sure you are running Rails 2.5 or up
+3. run `bundle install`
+4. run `yarn`
+5. go to http://localhost:3000
+6. You should see a webpage that looks like a schedule
