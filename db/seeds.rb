@@ -10,11 +10,14 @@ Work.destroy_all
 
 works = Work.create([
   { name: 'Walden', creator: 'Threau, Henry David' },
-  { name: 'Anna Karenina' },
-  { name: 'Post Card' },
+  { name: 'Middlemarch, A Study of Provincial Life', creator: 'George Eliot (Mary Anne Evans)' },
+  { name: 'Anna Karenina', creator: 'Leo Tolstoy' },
+  { name: 'Post Card', creator: 'Acme Press Utd.' },
 ])
 
 
 AttachedFile.create([
-  { filename: 'page1.png', size: 1234, work: works[0] }
+  { filename: 'page1.png', size: 1234, work: works[0] },
+  { filename: 'page1.png', size: 2321, work: works[1] },
+  { filename: 'book.pdf', size: 9223, work: works[2] },
 ])
