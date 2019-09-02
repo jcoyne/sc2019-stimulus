@@ -10,8 +10,8 @@
       <%= work.creator %>
       </div>
 
-      <div class="properties">
-        Files: <button>Hide</button>
+      <section class="properties" data-controller="toggle">
+        Files: <button data-action="click->toggle#toggle">Hide</button>
         <ul class="files">
           <% work.attached_files.each do |file| %>
             <li class="file">
@@ -19,7 +19,7 @@
             </li>
           <% end %>
         </ul>
-      </div>
+      </section>
     </li>
   <% end %>
 </ul>
