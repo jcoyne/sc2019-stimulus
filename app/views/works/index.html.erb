@@ -12,7 +12,7 @@
 
       <section class="properties" data-controller="toggle">
         Files: <button data-action="click->toggle#toggle">Hide</button>
-        <ul class="files">
+        <ul class="files" data-target="toggle.thingToHide">
           <% work.attached_files.each do |file| %>
             <li class="file">
               <%= file.filename %>
